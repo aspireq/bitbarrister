@@ -1,0 +1,129 @@
+@media(max-width:350px) {
+    
+}
+@media(max-width:500px) {
+    
+    .p-xs-0 {
+        padding: 0
+    }
+    .sub-banner-text h1 {
+        font-size: 30px;
+        margin: 0px;
+    }
+    .invest-list li {
+        width: 100%
+    }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+    
+    .sub-banner-text h1 {
+        font-size: 44px;
+        margin: 0px;
+    }
+}
+@media (max-width: 767px) {
+    .border-right {
+        border-bottom: 2px dotted #a9a9a9;
+        border-right: none;
+        margin-bottom: 15px
+    }
+    .arrow1 {
+        display: none
+    }
+    .calculator .form-group {
+        width: 100%;
+    }
+    .icon-left,
+    .content-left {
+        text-align: center;
+    }
+    .sub-banner-text {
+        top: 18px;
+    }
+    .navbar-default .navbar-toggle {
+        border-color: #025076;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #025076;
+    }
+    .navbar-nav {
+        margin: 0;
+    }
+    .form-xs{
+        border:none;
+        margin: 0
+    }
+    .navbar-toggle {
+        margin-left: 15px;
+    }
+    .banner-text h1{
+        font-size: 15px;
+        margin:5px
+    }
+    .banner-text h3{
+        font-size: 13px;
+        margin:5px
+    }
+    .banner-text{
+        padding:5px;
+        bottom: 10%
+    }
+}
+@media (min-width: 768px) {
+    .ds-text-right {
+        text-align: right;
+    }
+    .ds-text-left {
+        text-align: left;
+    }
+}
+@media(min-width:768px) and (max-width:992px) {
+    .arrow1 {
+        display: none
+    }
+    .footer h3 {
+        color: #ffa924;
+        font-size: 16px;
+    }
+    .count {
+        font-size: 25px
+    }
+    .navbar-default .navbar-nav > li > a {
+        color: #1d4e5d;
+        font-size: 13px;
+    }
+    .sub-banner-text {
+        top: 20px;
+    }
+    .banner-text h1{
+        font-size:20px;
+    }
+    .banner-text h3{
+        font-size:16px;
+    }
+}
+@media(min-width:992px) and (max-width:1024px) {
+    .count {
+        font-size: 25px
+    }
+    .sub-banner-text {
+        top: 45px;
+    }
+    .banner-text h1{
+        font-size:20px;
+    }
+    .banner-text h3{
+        font-size:16px;
+    }
+}
+@media(min-width:1025px) and (max-width:1196px) {
+    .count {
+        font-size: 25px
+    }
+   
+}
+@media(min-width:1200px) {} @media(min-width:1600px) {
+    .sub-banner-text {
+        top: 150px
+    }
+}

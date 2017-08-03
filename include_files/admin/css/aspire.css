@@ -1,0 +1,122 @@
+#theme-wrapper {
+    box-shadow:none;
+}
+.theme-whbl #header-navbar {
+    background-color: #1B5A85;
+}
+.theme-whbl h1 {
+    color:#1B5A85;
+    font-weight: 500;
+    padding-left: 0
+}
+.infographic-box.colored i {
+    font-size: 3.6em;
+}
+.colored.commitee{
+    background-color:#309FDB;
+}
+.colored.events{
+    background-color:#21CDCA;
+}
+.colored.tributes{
+    background-color:#B2B2B2;
+}
+.colored.donors{
+    background-color:#947CDE;
+}
+.colored.donations{
+    background-color:#F8BB48;
+}
+.colored.cards{
+    background-color:#5F7C8A;
+}
+.colored.matrimonials{
+    background-color:#AA529B;                
+}
+.colored.male{
+    background-color:#00B8ED;
+}
+.colored.female{
+    background-color:#E85D88;
+}
+.colored.incomes{
+    background-color:#8EC051;
+}
+.colored.expenses{
+    background-color:#E5545B;
+}
+.colored.businesses{
+    background-color:#1B5A85;
+}
+.breadcrumb{
+    padding:0
+}
+#logo{
+    line-height: 27px;
+    font-size: 1.2em;
+}
+#sidebar-nav .nav > li > a > span {
+    font-size: 0.9em;
+    font-weight: 600;
+}
+.theme-whbl #sidebar-nav .nav > li > a:hover {
+    background-color: #ddd;
+}
+/* 24-3-2017 */
+.onoffswitch-inner::before {
+    content: "ON";
+    padding-left: 10px;
+    background-color:#0bb56e;
+}
+.table tbody > tr > td{
+    max-width:200px
+}
+/*in center*/
+.modal{
+    text-align: center;
+}
+.modal::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    margin-right: -4px;
+    vertical-align: middle;
+}
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+/*fade effect*/
+.modal.fade .modal-dialog {
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    transform: scale(0.1);
+    top: 300px;
+    opacity: 1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.modal.fade.in .modal-dialog {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform: translate3d(0, -300px, 0);
+    transform: translate3d(0, -300px, 0);
+    opacity: 1;
+}
+.modal {
+    background: rgba(0,0,0,0.3);
+}
+#delete_record_msg, #delete_msg{
+    color: #373737;
+    font-size: 20px;
+    text-align: center;
+}
+#delete_record_modal .modal-header .modal-title, #deleteModal .modal-header .modal-title{
+    font-size: 20px;
+    text-align: center;
+}

@@ -1,0 +1,251 @@
+.memberpanel-banner .sub-banner-text{
+    top: 25px
+}
+.memberpanel-banner .sub-banner-text h1{
+    font-size:35px
+}
+.memberpanel-banner .sub-banner-img {
+    min-height: 88px;
+}
+.memberpanel{
+    margin:30px 0 30px -15px
+}
+.panel-list{
+    border: 1px solid #cecece;
+}
+.panel-list li.active{
+    border-left-color:#007B9E;
+}
+.panel-list li{
+    border-left: 4px solid transparent;
+    padding: 0 10px 0 6px;
+}
+.panel-list li a{
+    padding: 15px 15px 15px 10px;
+    display: block;
+    border-bottom: 1px solid #ececec;
+    color: #333
+}
+.list{
+    padding-left: 0
+}
+.panel-list li:hover{
+     border-left-color:#007B9E;
+}
+.panel-list li a:hover, .panel-list li.active a{
+    color:#086E8C;
+}
+.panel-header h3{
+    color:#086E8C;
+    margin: 15px 0;
+}
+a:hover{
+    text-decoration: none
+}
+.panel-header{
+    border: 1px solid #cecece;
+    box-shadow: 0px 1px 3px #cecece;
+}
+.panel-header .well{
+    border:none;
+}
+.btn-acinfo{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+.acbalance{
+    margin:30px -15px;
+    padding:30px;
+    background-color:#20a7bc;
+    color: #fff;
+    border: 1px solid #cecece;
+    box-shadow: 0px 1px 3px #cecece;
+}
+.acbalance h3{
+    margin: 0;
+}
+.acbox{
+    margin: 0 -30px;
+}
+.acbox img{
+    display: block;
+    margin: 20px auto
+}
+.acbox h3{
+    font-size: 17px;
+    text-align: center;
+    margin:0;
+    padding: 10px 
+}
+.acbox .withdraw h3{
+    background-color:#FEE194;
+}
+.acbox .deposit h3{
+    background-color:#A6DAFF;
+}
+.acbox .earning h3{
+    background-color:#CDFCBA;
+}
+.acbox ul{
+    margin:20px 0
+}
+.acbox ul li{
+    padding:10px 0;
+    border-bottom:1px solid #ddd;
+}
+/*.acbox ul li:last-child{
+    border-bottom:none;
+}*/
+.acbox .btn{
+    font-size: 14px
+}
+.list li span{
+    float: right;
+}
+.s-blue{
+   color:#00A0AE
+}
+
+thead{
+    background-color: #FFAA3A;
+    color:#1f1f1f
+}
+.filter{
+    margin:20px 0;
+    padding:15px;
+    background-color:#C8F2FF ;
+    border:1px solid #84E3FF 
+}
+.filter .form-control{
+    border-radius: 0
+}
+.bg-warning, .bg-info, .bg-danger{
+    padding: 15px;
+    margin: 20px 0
+}
+.p-0{
+    padding: 0
+}
+.m-b-15 .bg-danger{
+    margin:0 0 50px 0 !important
+}
+.depositmoney{
+    background: #fffce1;
+    padding: 25px;
+    border: 1px solid #e8cb63;
+    border-radius: 5px;
+}
+.cradio label {
+    /*min-width: 400px;*/
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #D1D3D4;
+    font-weight: normal;
+}
+.cradio input[type="radio"]:empty, .cradio input[type="checkbox"]:empty {
+    display: none;
+}
+.cradio input[type="radio"]:empty ~ label, .cradio input[type="checkbox"]:empty ~ label {
+    position: relative;
+    line-height: 2.5em;
+    text-indent: 3.25em;
+    margin-top: 2em;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.cradio input[type="radio"]:empty ~ label:before, .cradio input[type="checkbox"]:empty ~ label:before {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    content:'';
+    width:35px;
+    background: #D1D3D4;
+    border-radius: 3px 0 0 3px;
+}
+.cradio input[type="radio"]:hover:not(:checked) ~ label:before, .cradio input[type="checkbox"]:hover:not(:checked) ~ label:before {
+    content:'\f058';
+    text-indent:7px;
+    color: #C2C2C2;
+    padding-top:35px;
+    font-family: 'FontAwesome';
+    font-size: 23px;
+}
+.cradio input[type="radio"]:hover:not(:checked) ~ label, .cradio input[type="checkbox"]:hover:not(:checked) ~ label {
+    color: #888;
+}
+.cradio input[type="radio"]:checked ~ label:before, .cradio input[type="checkbox"]:checked ~ label:before {
+    content:'\f058';
+    text-indent:7px;
+    color: #333;
+    background-color: #ccc;
+    padding-top:35px;
+    font-family: 'FontAwesome';
+    font-size: 23px;
+}
+.cradio input[type="radio"]:checked ~ label, .cradio input[type="checkbox"]:checked ~ label {
+    color:#333;
+}
+.cradio input[type="radio"]:focus ~ label:before, .cradio input[type="checkbox"]:focus ~ label:before {
+    box-shadow: 0 0 0 3px #999;
+}
+.cradio-primary input[type="radio"]:checked ~ label:before, .cradio-primary input[type="checkbox"]:checked ~ label:before {
+    color: #fff;
+    background-color: #337ab7;
+}
+.cradio input[type="radio"]:checked ~ label h3{
+    color: #337AB7
+}
+.cradio h3{
+    color: #337AB7;
+    margin: 7px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.cradio h4{
+    margin: 15px 0 5px 0;
+    font-size:17px;
+    color: #636262;
+}
+.cradio p{
+    margin: 0;
+    font-size:15px;
+    color: #636262;
+}
+.plan1{
+    background-image: url(../img/memberpanel/bg1.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+.plan2{
+    background-image: url(../img/memberpanel/bg2.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+.plan3{
+    background-image: url(../img/memberpanel/bg3.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+.hasDatepicker{
+    width:100% !important
+}
+.m-l{
+    padding-top:7px
+}
+.btn-submit{
+    margin-top: 26px
+}
+.inheader {
+    background: #FF9800;
+    padding: 10px 5px;
+    font-size: 13px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: white;
+}
