@@ -10,7 +10,7 @@ class Common_model extends CI_Model {
         return $CI->$key;
     }
 
-    function select_all($tbl) {
+    function select_all($tbl) { 
         $data = $this->db->get($tbl);
         return $data->result();
     }

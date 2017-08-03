@@ -10,7 +10,7 @@ class Admin_model extends CI_Model {
         return $CI->$key;
     }
 
-    function get_user_account() {
+    function get_user_account() { 
         $this->load->library('Datatables');
         $this->datatables->select('user_accounts.uacc_username as uacc_username,user_accounts.uacc_group_fk as uacc_group_fk,user_accounts.uacc_email as uacc_email,user_accounts.uacc_id as uacc_id,user_accounts.uacc_ip_address as uacc_ip_address ,user_accounts.uacc_date_last_login as uacc_date_last_login,user_accounts.uacc_suspend as uacc_suspend');
         $this->datatables->from('user_accounts');

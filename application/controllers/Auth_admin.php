@@ -8,7 +8,7 @@ class Auth_admin extends CI_Controller {
     function __construct() {
         parent::__construct();
 
-        $this->load->database();
+        $this->load->database(); 
         $this->load->library('session');
         $this->load->helper('url');
         $this->load->model('Admin_model');
