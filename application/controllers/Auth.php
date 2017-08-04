@@ -5,7 +5,7 @@ if (!defined('BASEPATH'))
 
 class Auth extends CI_Controller {
 
-    function __construct() { 
+    function __construct() {
         parent::__construct();
         $this->load->database();
         $this->load->library('session');
@@ -39,16 +39,13 @@ class Auth extends CI_Controller {
     }
 
     function calculate_return() {
-        $total_return = $this->input->post('amount') * $this->input->post('total_percentage') / 100;
-        //$result = $this->bitcoin->GetRates();
-        //$bitcoin_value = $result['result']['USD']['rate_btc'];
-        //$planinfo = $this->Common_model->select_where_row('plans',array('id' => $this->input->post('plan')));
-//        $this->data['returns'] = array(
-//            'plan' => $this->input->post('plan'),
-//            'total_return' => $total_return,
-//            'total_percentage' => $this->input->post('total_percentage'),
-//            'amount' => $this->input->post('amount')
-//        );
+        $data = $this->Common_model->select_where_row('plans', array('id' => $this->input->post('plan_id')));
+        if($data->plan_duration != null) {
+            $total_percentage = $data->profit_margin * $data->plan_duration;
+        }else {
+            $total_percentage = 1825;
+        }
+        $total_return = $this->input->post('amount') * $total_percentage / 100;
         die(json_encode($total_return));
     }
 
@@ -736,12 +733,12 @@ class Auth extends CI_Controller {
         $senderid = 'EDCPAP';
         $mobile = '919998817837';
         $message = urlencode('test message');
-        $url = "http://sms.tncsoftware.com/api/mt/SendSMS?APIKey=".$api_key."&senderid=".$senderid."&channel=2&DCS=0&flashsms=0&number=".$mobile."&text=".$message."&route=clickhere";        
+        $url = "http://sms.tncsoftware.com/api/mt/SendSMS?APIKey=" . $api_key . "&senderid=" . $senderid . "&channel=2&DCS=0&flashsms=0&number=" . $mobile . "&text=" . $message . "&route=clickhere";
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         $result = curl_exec($ch);
         curl_close($ch);
         var_dump($result);
     }
-    
+
 }

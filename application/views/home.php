@@ -160,10 +160,6 @@
                                 </select>
                             </div>
                             <div class="form-group ">
-                                <label for="total_percentage">Total percent:</label>
-                                <input type="text" class="form-control" id="total_percentage" name="total_percentage" value="<?php echo ($returns['total_percentage'] != "") ? $returns['total_percentage'] : "" ?>">
-                            </div>
-                            <div class="form-group ">
                                 <label for="total_return">Total return:</label>
                                 <input type="text" class="form-control" id="total_return" name="total_return" value="<?php echo ($returns['total_return'] != "") ? $returns['total_return'] : "" ?>">
                             </div>
