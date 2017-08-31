@@ -14,7 +14,7 @@
                             <h1>3% DAILY, <i>FOR 100 DAYS</i></h1>
                             <h3>- Principle Included -</h3>
                             <br class="hidden-xs"/>
-                            <button class="btn btn-info" type="button" onclick="location.href='<?php echo base_url();?>auth/register'">Join Us Now</button>
+                            <button class="btn btn-info" type="button" onclick="location.href = '<?php echo base_url(); ?>auth/register'">Join Us Now</button>
                         </div>
                     </div>
                     <div class="item">
@@ -23,7 +23,7 @@
                             <h1>1% DAILY, <i>Forever</i></h1>
                             <h3>- Principle Back after 45 days -</h3>
                             <br class="hidden-xs" />
-                            <button class="btn btn-info" type="button" onclick="location.href='<?php echo base_url();?>auth/register'">Join Us Now</button>
+                            <button class="btn btn-info" type="button" onclick="location.href = '<?php echo base_url(); ?>auth/register'">Join Us Now</button>
                         </div>
                     </div>
                     <div class="item">
@@ -32,7 +32,7 @@
                             <h1>5% DAILY, <i>FOR 50 DAYS</i></h1>
                             <h3>- Principle Included -</h3>
                             <br class="hidden-xs"/>
-                            <button class="btn btn-info" type="button" onclick="location.href='<?php echo base_url();?>auth/register'">Join Us Now</button>
+                            <button class="btn btn-info" type="button" onclick="location.href = '<?php echo base_url(); ?>auth/register'">Join Us Now</button>
                         </div>
                     </div>
                 </div>
@@ -157,7 +157,7 @@
                                     <?php foreach ($plans as $plan) { ?>
                                         <option value="<?php echo $plan->id; ?>" <?php echo ($returns->plan != "" && $returns->plan == $plan->id) ? 'selected' : '' ?>><?php echo $plan->name . ' - ' . $plan->description; ?></option>
                                     <?php } ?>
-                                </select>
+                                </select> 
                             </div>
                             <div class="form-group ">
                                 <label for="total_return">Total return:</label>
@@ -332,7 +332,6 @@
                 </div>
         </section>
         <?php echo $footer; ?>
-
         <!-- The scroll to top feature -->
         <div class="scroll-top-wrapper ">
             <span class="scroll-top-inner">

@@ -31,7 +31,7 @@ class Auth extends CI_Controller {
         $this->home();
     }
 
-    public function include_files() {
+    public function include_files() { 
         $this->data['header'] = $this->load->view('includes/header', $this->data, TRUE);
         $this->data['common'] = $this->load->view('includes/common', $this->data, TRUE);
         $this->data['footer'] = $this->load->view('includes/footer', $this->data, TRUE);
